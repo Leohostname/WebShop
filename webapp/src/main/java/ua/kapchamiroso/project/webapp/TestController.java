@@ -24,7 +24,7 @@ public class TestController {
     }
 
     @PutMapping(value = "/replaceMsg", consumes = "application/json")
-    public void replaceMessage(@RequestParam Long id, @RequestBody Message message)
+    public void replaceMessage(@RequestParam long id, @RequestBody Message message)
     {
         messageRepository.deleteById(id);
         messageRepository.save(message);
