@@ -22,4 +22,17 @@ public class TestController {
     public void saveMessage(@RequestBody Message message) {
         messageRepository.save(message);
     }
+
+    @PutMapping(value = "/replaceMsg", consumes = "application/json")
+    public void replaceMessage(@RequestParam Long id, @RequestBody Message message)
+    {
+        messageRepository.deleteById(id);
+        messageRepository.save(message);
+    }
+
+    @DeleteMapping("/deleteById")
+    public void deleteMessage(@RequestParam long id)
+    {
+        messageRepository.deleteById(id);
+    }
 }
