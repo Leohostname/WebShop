@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+:root {
+    --color-primary: #fff;
+    --color-gray: #acacac;
+    --color-dark-gray: #6c6c6c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--color-gray);
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Zen Dots', cursive;
+    color: #fff;
+}
+
+.header {
+    position: relative;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 0 120px;
+}
+
+.header__webshop_logo {
+    font-size: 22px;
+}
+
+.header__webshop_logo a {
+    color: #fff;
+}
+
+.header__menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
+    padding: 0 20px;
+    border-right: 1px solid var(--color-dark-gray);
+}
+
+.menu__item:last-child {
+    border-right: none;
+}
+
+.profile_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.profile_btn:hover {
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    background-color: #555;
+    border-radius: 50%;
+}

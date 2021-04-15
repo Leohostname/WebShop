@@ -17,6 +17,11 @@ public class TestController {
         return "jsTest";
     }
 
+    @GetMapping("")
+    public String mainPage() {
+        return "index";
+    }
+
     @ResponseBody
     @GetMapping("/test")
     public Message getMessage(@RequestParam long id) {

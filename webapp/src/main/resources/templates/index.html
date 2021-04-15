@@ -1,18 +1,27 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>You first Spring application</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <title>WebShop</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<p><a href="/hello">Greet the world!</a></p>
-
-<form action="/hello" method="GET" id="nameForm">
-    <div>
-        <label for="nameField">How should the app call you?</label>
-        <input name="myName" id="nameField">
-        <button>Greet me!</button>
+<header class="header">
+    <div class="header__webshop_logo"><a href="/">WebShop</a></div>
+    <nav class="header__menu">
+        <ul class="menu__list">
+            <li class="menu__item active"><a href="/">Home</a></li>
+            <li class="menu__item"><a href="#">Categories</a></li>
+            <li class="menu__item"><a href="#">Products</a></li>
+            <li class="menu__item"><a href="#">Contacts</a></li>
+            <li class="menu__item"><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+    <div class="profile_menu">
+        <div id="profile-btn" class="profile_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
     </div>
-</form>
+</header>
 </body>
 </html>
